@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Keyboard Button Control</title>
+</head>
+<body>
+  <h2>Press "A" or "B" to click buttons</h2>
+
+  <button id="buttonA" onclick="alert('Button A clicked!')">Button A</button>
+  <button id="buttonB" onclick="alert('Button B clicked!')">Button B</button>
+  <!-- <button id="gear box fail" onclick="alert('gear box fail')">gear up/down</button> -->
+
+  <script>
+    document.addEventListener("keydown", function(event) {
+      if (event.key == "a" , event.key == "c") {
+        document.getElementById("buttonA").click();
+      }
+      if (event.key === "b" || event.key === "B") {
+        document.getElementById("buttonB").click();
+      }
+      // if (event.key == "a" , "+") {
+      //   document.getElementById("gear box fail").click();
+      // }
+    });
+  </script>
+</body>
+</html>
